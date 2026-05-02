@@ -61,3 +61,22 @@ Replace files inside `assets/img/` while keeping same filenames:
 3. In `index.html`, replace each placeholder `<div class="image-slot ...">` with the prepared commented `<img>` tag shown beside it.
 4. Commit and push changes to `main`.
 5. Cloudflare Pages will auto-deploy the updated site.
+
+
+## How to add images
+1. Open the GitHub repo.
+2. Go to `assets/img/`.
+3. Upload images with these exact filenames:
+   - `hero-roadside-assist.webp`
+   - `battery-jumpstart.webp`
+   - `battery-replacement.webp`
+   - `flat-tyre-help.webp`
+   - `fuel-delivery.webp`
+   - `technician-roadside.webp`
+4. Recommended image size:
+   - Service images: 1200x675 or 1600x900
+   - Hero image: 1600x1000 or 1920x1200
+5. Recommended format: `.webp`
+6. Keep each file below 500 KB if possible.
+7. Commit the upload.
+8. Cloudflare Pages will redeploy automatically.
