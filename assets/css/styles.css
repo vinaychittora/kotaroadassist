@@ -213,7 +213,7 @@ body.high-contrast {
 }
 
 .hero__media::after {
-  content: "Hero image coming soon";
+  content: "";
   position: absolute;
   inset: 0;
   display: grid;
