@@ -130,7 +130,8 @@ body.drawer-open {
   align-items: center;
 }
 
-.menu-toggle {
+.menu-toggle,
+.menu-toggle.btn {
   display: none;
 }
 
