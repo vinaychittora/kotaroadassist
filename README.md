@@ -47,3 +47,17 @@ Replace files inside `assets/img/` while keeping same filenames:
 - Stored in `localStorage`:
   - `kra_scale`
   - `kra_contrast`
+
+
+## Replacing Placeholder Images
+1. Upload optimized images to `assets/img/`.
+2. Use these exact filenames:
+   - `hero-roadside-assist.webp`
+   - `battery-jumpstart.webp`
+   - `battery-replacement.webp`
+   - `flat-tyre-help.webp`
+   - `fuel-delivery.webp`
+   - `technician.webp`
+3. In `index.html`, replace each placeholder `<div class="image-slot ...">` with the prepared commented `<img>` tag shown beside it.
+4. Commit and push changes to `main`.
+5. Cloudflare Pages will auto-deploy the updated site.
