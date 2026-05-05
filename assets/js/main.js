@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
 
   const year=document.getElementById('year'); if(year) year.textContent=new Date().getFullYear();
-  const lb={"@context":"https://schema.org","@type":"AutoRepair","name":"xxxx Road Assist","legalName":"Blackstone Traders","telephone":"xxxxxx","email":"xxxx@xxxx.com","address":{"@type":"PostalAddress","streetAddress":"xxxx xxxx xxxx","addressLocality":"xxxx","addressRegion":"xxxx","addressCountry":"IN"},"areaServed":"xxxx, xxxx","openingHours":"Mo-Su 00:00-23:59"};
+  const lb={"@context":"https://schema.org","@type":"AutoRepair","name":"xxxx Road Assist","legalName":"XYZ Pvt. Ltd.","telephone":"xxxxxx","email":"xxxx@xxxx.com","address":{"@type":"PostalAddress","streetAddress":"xxxx xxxx xxxx","addressLocality":"xxxx","addressRegion":"xxxx","addressCountry":"IN"},"areaServed":"xxxx, xxxx","openingHours":"Mo-Su 00:00-23:59"};
   const faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[1,2,3,4,5,6,7,8].map(n=>({"@type":"Question","name":window.I18N.en[`faq_q${n}`],"acceptedAnswer":{"@type":"Answer","text":window.I18N.en[`faq_a${n}`]}}))};
   document.getElementById('localbusiness-schema').textContent=JSON.stringify(lb);document.getElementById('faq-schema').textContent=JSON.stringify(faq);
 
