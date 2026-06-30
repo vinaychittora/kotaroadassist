@@ -1,7 +1,7 @@
 {
   "name": "Kota Road Assist",
   "short_name": "Kota Road Assist",
-  "description": "Roadside assistance in Kota for car and truck jump start, battery replacement, fuel delivery and flat tyre help.",
+  "description": "Roadside assistance in Kota for car and truck jump start, puncture repair, tyre assistance, battery replacement and fuel delivery.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

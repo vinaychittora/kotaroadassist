@@ -72,7 +72,30 @@ button:focus-visible {
 }
 
 body.high-contrast {
-  filter: contrast(1.15);
+  --bg: #000000;
+  --char: #0f0f10;
+  --muted: #f4f4f5;
+  --light: #ffffff;
+  --border: rgba(255, 255, 255, 0.44);
+}
+
+body.high-contrast .site-header,
+body.high-contrast .mobile-bar,
+body.high-contrast .mobile-drawer {
+  background: #000000;
+}
+
+body.high-contrast .btn,
+body.high-contrast .trust li,
+body.high-contrast .card,
+body.high-contrast .faq details,
+body.high-contrast .area-links a {
+  border-color: rgba(255, 255, 255, 0.72);
+}
+
+body.high-contrast .btn-wa,
+body.high-contrast .btn-ghost {
+  background: #000000;
 }
 
 body.drawer-open {

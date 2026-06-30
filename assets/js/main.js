@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     "legalName":"Blackstone Traders",
     "url":"https://kotaroadassist.com/",
     "image":"https://kotaroadassist.com/assets/img/social-preview.jpg",
-    "description":"Roadside assistance in Kota for car battery jump start, truck jump start, battery replacement, fuel delivery and flat tyre or puncture help.",
+    "description":"Roadside assistance in Kota for car battery jump start, truck jump start, battery replacement, fuel delivery, puncture repair and roadside tyre assistance.",
     "telephone":"+91-9649289546",
     "email":"blackstonetraderskota@gmail.com",
     "priceRange":"₹₹",
@@ -93,12 +93,12 @@ document.addEventListener('DOMContentLoaded',()=>{
         offer("Car battery jump start in Kota","350","Car battery jump start service charge."),
         offer("Truck jump start in Kota","800","Truck jump start charges start at ₹800 and usually depend on distance."),
         offer("Battery replacement in Kota",null,"Battery cost plus ₹350 service, visit and installation charge."),
-        offer("Flat tyre and puncture help in Kota",null,"Flat tyre support from ₹350 plus ₹100 per puncture where applicable."),
+        offer("Puncture repair and tyre assistance in Kota",null,"Flat tyre support from ₹350 plus ₹100 per puncture where applicable."),
         offer("Emergency fuel delivery in Kota","250","Fuel delivery service charge plus actual fuel cost.")
       ]
     }
   };
-  const faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[1,2,3,4,5,6,7,8,9].map(n=>({"@type":"Question","name":window.I18N.en[`faq_q${n}`],"acceptedAnswer":{"@type":"Answer","text":window.I18N.en[`faq_a${n}`]}}))};
+  const faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[1,2,3,4,5,6,7,8,9,10].map(n=>({"@type":"Question","name":window.I18N.en[`faq_q${n}`],"acceptedAnswer":{"@type":"Answer","text":window.I18N.en[`faq_a${n}`]}}))};
   document.getElementById('localbusiness-schema').textContent=JSON.stringify(lb);document.getElementById('faq-schema').textContent=JSON.stringify(faq);
 
   applyTranslations(get('kra_lang','en')||'en');
