@@ -98,7 +98,33 @@ body.drawer-open {
   padding: 0.85rem 0;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #ffffff;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.brand-logo {
+  width: 44px;
+  min-width: 44px;
+  max-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  max-height: 44px;
+  flex: 0 0 44px;
+  object-fit: contain;
+}
+
+.brand-copy {
+  display: grid;
+  min-width: 0;
+}
+
 .brand-title {
+  display: block;
   margin: 0;
   font-size: 1.45rem;
   font-weight: 800;
@@ -106,6 +132,7 @@ body.drawer-open {
 }
 
 .brand-sub {
+  display: block;
   margin: 0.1rem 0 0;
   color: var(--muted);
   font-size: 0.95rem;
@@ -539,8 +566,19 @@ body.drawer-open {
   .brand {
     grid-column: 2;
     grid-row: 1;
-    text-align: center;
+    justify-content: center;
     min-width: 0;
+    gap: 0.42rem;
+  }
+
+  .brand-logo {
+    width: 34px;
+    min-width: 34px;
+    max-width: 34px;
+    height: 34px;
+    min-height: 34px;
+    max-height: 34px;
+    flex-basis: 34px;
   }
 
   .brand-title { font-size: 1.12rem; }

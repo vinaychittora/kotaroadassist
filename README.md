@@ -26,12 +26,13 @@ Then visit `http://localhost:8080`.
 
 ## Where to replace images
 Replace files inside `assets/img/` while keeping same filenames:
-- `hero-roadside-assist.webp`
-- `battery-jumpstart.webp`
+- `roadside-assistance-kota.webp`
+- `jump-start.webp`
+- `truck-jump-start.webp`
 - `battery-replacement.webp`
-- `fuel-delivery.webp`
 - `flat-tyre-help.webp`
-- `technician.webp`
+- `emergency-fuel-delivery.webp`
+- `footer-banner.webp`
 
 ## Translations
 - Translation dictionary: `assets/js/i18n.js`
@@ -52,13 +53,14 @@ Replace files inside `assets/img/` while keeping same filenames:
 ## Replacing Placeholder Images
 1. Upload optimized images to `assets/img/`.
 2. Use these exact filenames:
-   - `hero-roadside-assist.webp`
-   - `battery-jumpstart.webp`
+   - `roadside-assistance-kota.webp`
+   - `jump-start.webp`
+   - `truck-jump-start.webp`
    - `battery-replacement.webp`
    - `flat-tyre-help.webp`
-   - `fuel-delivery.webp`
-   - `technician.webp`
-3. In `index.html`, replace each placeholder `<div class="image-slot ...">` with the prepared commented `<img>` tag shown beside it.
+   - `emergency-fuel-delivery.webp`
+   - `footer-banner.webp`
+3. Keep the same dimensions where possible: hero `1200x750`, service cards `1200x675`, footer banner `1440x480`.
 4. Commit and push changes to `main`.
 5. Cloudflare Pages will auto-deploy the updated site.
 
@@ -67,15 +69,17 @@ Replace files inside `assets/img/` while keeping same filenames:
 1. Open the GitHub repo.
 2. Go to `assets/img/`.
 3. Upload images with these exact filenames:
-   - `hero-roadside-assist.webp`
-   - `battery-jumpstart.webp`
+   - `roadside-assistance-kota.webp`
+   - `jump-start.webp`
+   - `truck-jump-start.webp`
    - `battery-replacement.webp`
    - `flat-tyre-help.webp`
-   - `fuel-delivery.webp`
-   - `technician-roadside.webp`
+   - `emergency-fuel-delivery.webp`
+   - `footer-banner.webp`
 4. Recommended image size:
-   - Service images: 1200x675 or 1600x900
-   - Hero image: 1600x1000 or 1920x1200
+   - Service images: 1200x675
+   - Hero image: 1200x750
+   - Footer banner: 1440x480
 5. Recommended format: `.webp`
 6. Keep each file below 500 KB if possible.
 7. Commit the upload.

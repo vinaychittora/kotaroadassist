@@ -63,8 +63,42 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
 
   const year=document.getElementById('year'); if(year) year.textContent=new Date().getFullYear();
-  const lb={"@context":"https://schema.org","@type":"AutoRepair","name":"Kota Road Assist","legalName":"Blackstone Traders","telephone":"+91-9649289546","email":"blackstonetraderskota@gmail.com","address":{"@type":"PostalAddress","streetAddress":"H.No. 4-K-32, Mahaveer Nagar III","addressLocality":"Kota","addressRegion":"Rajasthan","addressCountry":"IN"},"areaServed":"Kota, Rajasthan","openingHours":"Mo-Su 00:00-23:59"};
-  const faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[1,2,3,4,5,6,7,8].map(n=>({"@type":"Question","name":window.I18N.en[`faq_q${n}`],"acceptedAnswer":{"@type":"Answer","text":window.I18N.en[`faq_a${n}`]}}))};
+  const serviceArea={"@type":"City","name":"Kota","addressRegion":"Rajasthan","addressCountry":"IN"};
+  const offer=(name,price,description)=>({
+    "@type":"Offer",
+    "priceCurrency":"INR",
+    ...(price?{"price":price}:{}),
+    "description":description,
+    "itemOffered":{"@type":"Service","name":name,"areaServed":serviceArea}
+  });
+  const lb={
+    "@context":"https://schema.org",
+    "@type":"AutoRepair",
+    "@id":"https://kotaroadassist.com/#business",
+    "name":"Kota Road Assist",
+    "legalName":"Blackstone Traders",
+    "url":"https://kotaroadassist.com/",
+    "image":"https://kotaroadassist.com/assets/img/social-preview.jpg",
+    "description":"Roadside assistance in Kota for car battery jump start, truck jump start, battery replacement, fuel delivery and flat tyre or puncture help.",
+    "telephone":"+91-9649289546",
+    "email":"blackstonetraderskota@gmail.com",
+    "priceRange":"₹₹",
+    "address":{"@type":"PostalAddress","streetAddress":"H.No. 4-K-32, Mahaveer Nagar III","addressLocality":"Kota","addressRegion":"Rajasthan","addressCountry":"IN"},
+    "areaServed":serviceArea,
+    "openingHours":"Mo-Su 00:00-23:59",
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Kota Road Assist Services",
+      "itemListElement":[
+        offer("Car battery jump start in Kota","350","Car battery jump start service charge."),
+        offer("Truck jump start in Kota","800","Truck jump start charges start at ₹800 and usually depend on distance."),
+        offer("Battery replacement in Kota",null,"Battery cost plus ₹350 service, visit and installation charge."),
+        offer("Flat tyre and puncture help in Kota",null,"Flat tyre support from ₹350 plus ₹100 per puncture where applicable."),
+        offer("Emergency fuel delivery in Kota","250","Fuel delivery service charge plus actual fuel cost.")
+      ]
+    }
+  };
+  const faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[1,2,3,4,5,6,7,8,9].map(n=>({"@type":"Question","name":window.I18N.en[`faq_q${n}`],"acceptedAnswer":{"@type":"Answer","text":window.I18N.en[`faq_a${n}`]}}))};
   document.getElementById('localbusiness-schema').textContent=JSON.stringify(lb);document.getElementById('faq-schema').textContent=JSON.stringify(faq);
 
   applyTranslations(get('kra_lang','en')||'en');
